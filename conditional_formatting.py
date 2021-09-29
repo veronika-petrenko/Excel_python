@@ -1,15 +1,14 @@
 #already created df, save to excel, for the sheet df3 add conditional formatting with this rules:
-# green when the value is between -5% and 5%, yellow when it is between -10% and - 5% and 5% and 10% and red when lower than -10% and higher than 10%
-#convert to %
+# green when the value is between -5% and 5%, yellow when it is between -10% and - 5% and 5% and 10% and red when lower than -10% or higher than 10%
+#convert results to %
 
 from datetime import datetime
 import pandas as pd
 import gspread
 import numpy as np
 import xlsxwriter
-
 from datetime import datetime
-import webdav3.client as wc
+
 
 game = 'Some_game'
 TODAY = datetime.today().strftime('%Y-%m-%d')
